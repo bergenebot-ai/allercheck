@@ -1,0 +1,17 @@
+{
+  "name": "certi-menus",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "npm -w apps/web run dev",
+    "build": "npm -w apps/web run build",
+    "preview": "npm -w apps/web run preview",
+    "lint": "npm -w apps/web run lint",
+    "test": "npm -w apps/web run test",
+    "deploy": "npm -w apps/web run deploy",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}

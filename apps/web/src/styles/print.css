@@ -1,0 +1,16 @@
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
